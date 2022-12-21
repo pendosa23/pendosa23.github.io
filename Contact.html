@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <title>Rumah Kupi by TMF</title>
+    <marquee><h1>Welcome To Rumah Kupi by TMF</h1></marquee>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="RumahKupi.css">       
+<style>
+         
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          box-sizing: border-box;
+        }
+        
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #66545e;
+            }
+            
+            .topnav a {
+              float: left;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color:#f6e0b5;
+              color: black;
+            }
+            
+            .topnav a.active {
+              background-color: #eea990;
+              color: white;
+            }
+            @media screen and (max-width: 500px) {
+           .topnav a {
+            float: none;
+            display: block;
+          }
+        }
+
+        .contact-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #eea990;
+        color: white;
+}
+            
+            </style>
+            </head>
+            
+            <body>
+                
+            <div class="topnav">
+              <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Home.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+              <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Menu.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Menu.html"><i class="fa fa-fw fa-search"></i>Menu</a>
+              <a class="active" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+              <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/AboutUs.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/AboutUs.html"><i class="fa fa-fw fa-user"></i>About Us</a>
+              <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/LearnAboutCoffee.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/LearnAboutCoffee.html"><i class="fa fa-fw fa-book"></i>Learn About Coffee</a>
+            </div>
+        
+            <div class="contact-section">
+                <h1 style="text-align:center; font-size:400%;"> Contact</h1>
+                <p style="text-align:center; font-size:200%;">Find us at Rumah Kupi by TMF or call us at 0123456789</p>
+                <p style="text-align:center; font-size:200%;">You Also Can Make A Reservation With Us. Just Fill In The Form</p>
+
+
+                <form action="process.php" method="get">
+
+                    <fieldset>
+                        <legend style="text-align:center; font-size:300%;">Reservation Form</legend>
+                
+                  <label for="fname">First Name:</label>
+                  <input type="text" id="fname" name="fname"><br><br>
+                
+                  <label for="gender">Gender:</label>
+                  <input type="radio" name="Gender" value="Male"> Male
+                  <input type="radio" name="Gender" value="Female"> Female<br><br>
+                
+                  <label for="people">How Many People ? :</label>
+        
+                  <select name="people" id="people">
+                  <option value="one">One</option>
+                  <option value="two">Two</option>
+                  <option value="three">Three</option>
+                  <option value="four">Four</option>
+                  <option value="five">Five</option>
+                
+                  </select>
+                  <p>(Maximum 5 People)</p>
+                
+                  <label for="date">Date:</label>
+                  <input type="date" id="date" name="date"><br><br>
+                
+                  <label for="appt">Time:</label>
+                  <input type="time" id="appt" name="appt"><br><br>
+                
+                  <label for="events">Special Events</label>:</label>
+                  <input type="checkbox" name="events1" value="birthday"> Birthday
+                  <input type="checkbox" name="events2" value="farewell"> Farewell
+                  <input type="checkbox" name="events3" valur="others"> Others<br><br>
+                
+                
+                  <label for="phone">Phone Number:</label>
+                  <input type="number" id="phone" name="phone"><br><br>
+                
+                  <label for="email">Email Address:</Address>:</label>
+                  <input type="text" id="email" name="email"><br><br>
+                
+                  <button type="submit" value="Submit">Submit</button>
+                  <button type="reset" value="Reset">Reset</button>
+                  
+                </fieldset>
+                
+                </form>
+        
+        </body>
+        </html>

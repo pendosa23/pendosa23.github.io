@@ -1,0 +1,50 @@
+.title {
+    color: rgb(85, 84, 84);
+    text-align: center;
+  }
+  
+  .titlename
+  {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .titleday
+  {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .imghours {
+    border-radius: 60%;
+    
+  }
+
+  .titletable
+  {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .imglatte {
+    border-radius: 60%;
+    
+  }
+
+  .imgmatcha {
+    border-radius: 60%;
+    
+  }
+
+  .imgcroissant{
+    border-radius: 60%;
+  }
