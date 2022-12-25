@@ -71,56 +71,58 @@
                 <h1 style="text-align:center; font-size:400%;"> Contact</h1>
                 <p style="text-align:center; font-size:200%;">Find us at Rumah Kupi by TMF or call us at 0123456789</p>
                 <p style="text-align:center; font-size:200%;">You Also Can Make A Reservation With Us. Just Fill In The Form</p>
-
-
-                <form action="process.php" method="get">
-
-                    <fieldset>
-                        <legend style="text-align:center; font-size:300%;">Reservation Form</legend>
                 
-                  <label for="fname">First Name:</label>
-                  <input type="text" id="fname" name="fname"><br><br>
-                
-                  <label for="gender">Gender:</label>
-                  <input type="radio" name="Gender" value="Male"> Male
-                  <input type="radio" name="Gender" value="Female"> Female<br><br>
-                
-                  <label for="people">How Many People ? :</label>
-        
-                  <select name="people" id="people">
-                  <option value="one">One</option>
-                  <option value="two">Two</option>
-                  <option value="three">Three</option>
-                  <option value="four">Four</option>
-                  <option value="five">Five</option>
-                
-                  </select>
-                  <p>(Maximum 5 People)</p>
-                
-                  <label for="date">Date:</label>
-                  <input type="date" id="date" name="date"><br><br>
-                
-                  <label for="appt">Time:</label>
-                  <input type="time" id="appt" name="appt"><br><br>
-                
-                  <label for="events">Special Events</label>:</label>
-                  <input type="checkbox" name="events1" value="birthday"> Birthday
-                  <input type="checkbox" name="events2" value="farewell"> Farewell
-                  <input type="checkbox" name="events3" valur="others"> Others<br><br>
-                
-                
-                  <label for="phone">Phone Number:</label>
-                  <input type="number" id="phone" name="phone"><br><br>
-                
-                  <label for="email">Email Address:</Address>:</label>
-                  <input type="text" id="email" name="email"><br><br>
-                
-                  <button type="submit" value="Submit">Submit</button>
-                  <button type="reset" value="Reset">Reset</button>
+                <fieldset>
+                <body align="center" >  
+                  <legend style="text-align:center; font-size:400%;"> Reservation Form</Form></legend>
+                  <table cellspacing="2" align="center" cellpadding="10" border="0">  
                   
+                  <tr><td> Name</td>   
+                  <td><input type="text" placeholder="Enter Your Name" id="n1"></td></tr> 
+
+                  <tr><td>Email </td>   
+                  <td><input type="text" placeholder="Enter Your Email id" id="e1"></td></tr> 
+
+                  
+                  <tr><td>Select Your Date</td> 
+                  <td><input type="date" id="date" name="date"></td></tr>
+
+                  <tr><td>Select Your Time</td> 
+                  <td><input type="time" id="appt" name="appt"></td></tr>
+                  
+                  <tr><td>
+                  <input type="submit" value="Submit" onClick="submit_reservation()"/>  
+                  </table>  
+                  <script type="text/javascript">  
+                  
+                  function submit_reservation(){  
+                  var n=document.getElementById("n1").value;  
+                  var e=document.getElementById("e1").value;  
+                  
+                   
+                          var letters = /^[A-Za-z]+$/;  
+                          var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+                          
+                  if(n==''||e==''){  
+                  alert("Enter Each Details Correctly");  
+                  }  
+                  else if(!letters.test(n))  
+                          {  
+                              alert('Name Is Incorrect Must Contain Alphabets Only');  
+                          }  
+                  else if (!email_val.test(e))  
+                          {  
+                              alert('Invalid Email Format Please Enter Valid Email id');  
+                          }  
+                  else{  
+                  alert("Your Reservation Is Successfully .... ");  
+                  window.location="index.html";  
+                  }  
+                  }  
+                  </script>  
+                  </body>  
+
                 </fieldset>
-                
-                </form>
         
         </body>
         </html>
