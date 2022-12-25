@@ -14,26 +14,7 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.bean2-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bean2.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.bean2-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-}
-    
+}   
     .topnav {
       overflow: hidden;
       background-color: #66545e;
@@ -62,35 +43,91 @@ body, html {
     float: none;
     display: block;
   }
+
 }
+.slider {
+        width: 500px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: #eea990;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: #66545e;
+      }
     </style>
     </head>
     
     <body>
         
     <div class="topnav">
-      <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Home.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Home.html"><i class="fa fa-fw fa-home"></i>Home</a>
-      <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Menu.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Menu.html"><i class="fa fa-fw fa-search"></i>Menu</a>
-      <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Contact.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/Contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-      <a href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/AboutUs.html" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/AboutUs.html"><i class="fa fa-fw fa-user"></i>About Us</a>
-      <a class="active" href="file:///C:/Users/User/Desktop/CSC%20574/Assignment%201/LearnAboutCoffee.html"><i class="fa fa-fw fa-book"></i>Learn About Coffee</a>
+      <a href="index.html" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="Menu.html" href="Menu.html"><i class="fa fa-fw fa-search"></i>Menu</a>
+      <a href="Contact.html" href="Contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+      <a href="AboutUs.html" href="AboutUs.html"><i class="fa fa-fw fa-user"></i>About Us</a>
+      <a class="active" href="LearnAboutCoffee.html"><i class="fa fa-fw fa-book"></i>Learn About Coffee</a>
     </div>
+<fieldset>
+<legend style="text-align:center; font-size:400%;"> Type Of Coffee Beans</legend>
+<p style="text-align:center; font-size:130%;">There's over 120 varieties of coffee plants and each produces a different type of coffee bean, however the majority of the coffee we consume comes from just two variants, Robusta (also known as Coffea Robusta or Coffea Canephora) or Arabica (Coffea Arabica) or a blend of the two. The two varieties different in taste, growing conditions, and price.</p>
 
-    <div class="bean2-image">
-        <div class="bean2-text">
-          <h1 style="font-size:40px">History Of Coffee</h1>
-          <p style="font-size:15px">The history of coffee dates back to centuries of old oral tradition in Africa. Coffee plants grew wild in Ethiopia and were widely used by nomadic tribes for thousands of years. Sufi monasteries in Yemen employed coffee as an aid to concentration during prayers. Roasting the seeds was not a way to serve coffee until the 1400s.</p>
-          <p style="font-size:15px">During the cultivation, brewed coffee was reserved exclusively for the priesthood and the medical profession; doctors would use the brew for patients experiencing a need for better digestion, and priests used it to stay alert during their long nights of studying for the church.Coffee later spread to Europe in the early 16th century; it caused some controversy on whether it was halal in Ottoman and Mamluk society.</p>
-          <p style="font-size:15px">Coffee arrived in Italy the second half of the 16th century through commercial Mediterranean trade routes, only being served to the wealthy. Central and Eastern Europeans learned of coffee from the Ottomans. By the mid 17th century, it had reached India and the East Indies.</p>
-          <p style="font-size:15px">Coffee houses would establish themselves in Western Europe by the late 17th century, especially in England and Germany. In many cultures, if you could afford to serve coffee to your guests, it was a sign of wealth and power. One of the earliest cultivations of coffee in the New World was when Gabriel de Clieu brought coffee seedlings to Martinique in 1720. </p>
-          <p style="font-size:15px">These beans later sprouted 18,680 coffee trees which enabled its spread to other Caribbean islands like Saint-Domingue and also to Mexico. By 1788, Saint-Domingue supplied half the world's coffee.</p>
-          <p style="font-size:15px">By 1852, globally, Brazil became the largest producer of coffee and has held that status ever since. The period since 1950 saw the widening of the playing field due to the emergence of several other major producers, notably Colombia, Ivory Coast, Ethiopia, and Vietnam; the latter overtook Colombia and became the second-largest producer in 1999.</p>
-          <p style="font-size:15px">Modern production techniques along with the mass productization of coffee has made it a household item today</p>
-        </div>
-      </div>
-      
-      
+    
+         
+        <div class="slider">
+          <span id="slide-1"></span>
+          <span id="slide-2"></span>
+          <span id="slide-3"></span>
+          <div class="image-container">
+            
+    <img src="avcr2.jpg" class="slide" width="500" height="300" /> 
+    <img src="avsr.png" class="slide" width="500" height="300" />
+    <img src="avsr3.jpg" class="slide" width="500" height="300" />
+       
+  </div>
+  <div class="buttons">
+    <a href="#slide-1"></a>
+    <a href="#slide-2"></a>
+    <a href="#slide-3"></a>
+  </div>
+</div>
 
-      
+</fieldset>   
 </body>
 </html>
